@@ -12,6 +12,10 @@
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="30 days">
     <meta name="author" content="Kathy Wu">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C34S93SNJS"></script>
     <script>
@@ -23,6 +27,116 @@
     </script>
 </head>
 <body>
-    
+    <div class="main">
+            <header class="header">
+                <nav class="nav">
+                    <div class="nav__logo">
+                        <span class="name--highlight">Kathy </span>
+                        &nbsp;Wu
+                    </div>
+                    <div class="nav__right">
+                        <ul class="navbar">
+                            <li class="navbar__item">
+                                <a href="#home" class="navbar__link">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#about" class="navbar__link">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#resume" class="navbar__link">Resume</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#contact" class="navbar__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="pages">
+                    <div id="home" class="page homepage">
+                        <div class="page__header homepage__header">
+                            <img class="homepage__avatar" src="./assets/img/avatar.png" alt="Kathy Headshot" />
+                            <div class="homepage__info">
+                                <h1 class="homepage__title">Kathy Wu</h1>
+                                <div class="homepage__job-title">Web Developer</div>
+                                <div class="homepage__social-icons socail-icons">
+                                    <a href="" class="social-icons--linkedin">LinkedIn</a>
+                                    <a href="" class="social-icons--github">GIT</a>
+                                    <a href="" class="social-icons--facebook">FB</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__content">
+                            <div class="page__col-half page__content--left">
+                                <h3>About <span class="hightlight">Me</span></h3>
+                                <p>A passonate developer who is studying in UNSW. I am looking for practical work experience 
+                                to gain an in-depth understanding of the web development. Also, I am keen to learn new things in IT. 
+                                My long-term career goal is to be a senior web developer.</p>
+                            </div>
+                            <div class="page__col-half page__content--right">
+                                <table class="homepage--personal-details">
+                                    <tr>
+                                        <td>Email</td>
+                                        <td><a href="mailto:katekathywu@gmail.com">katekathywu@gmail.com</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Location</td>
+                                        <td>Sydney, Australia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Current Status</td>
+                                        <td>Web Developer & Student</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Study In</td>
+                                        <td>The University of New South Wales(UNSW)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div id="about" class="page aboutPage">
+                        <div class="page__header">
+                            <h1 class="page__title">ABOUT</h1>
+                        </div>
+                        <div class="page__content"></div>
+                    </div>
+                    <div id="resume" class="page resumePage">
+                        <div class="page__header">
+                            <h1 class="page__title">RESUME</h1>
+                        </div>
+                        <div class="page__content"></div>
+                    </div>
+                    <div id="contact" class="page contactPage">
+                        <div class="page__header">
+                            <h1 class="page__title">CONTACT</h1>
+                        </div>
+                        <div class="page__content">
+                            <form id="contactform" action="https://formsubmit.io/send/a3b48d18-124b-4a32-b066-a3e722dde927" method="POST">
+                                <input name="_redirect" type="hidden" id="name" value="http://127.0.0.1:5500/personal-info/index.html#contact">
+                                <input name="name" type="text" id="name" placeholder="Name*" required/>
+                                <input name="email" type="email" id="email" placeholder="Email*" required/>
+                                <textarea name="comment" id="comment" rows="3" placeholder="Enter your inqury here." required/></textarea>
+                            
+                                <input name="_formsubmit_id" type="text" style="display:none">
+                            
+                                <input value="Submit" type="submit">
+                            </form>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <footer class="footer">
+                © 2021 All rights reserved. Created by Kathy Wu
+                <div class="footer--right social-icons">
+                    <a href="" class="social-icons--linkedin"></a>
+                    <a href="" class="social-icons--github"></a>
+                    <a href="" class="social-icons--facebook"></a>
+                </div>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
