@@ -13,9 +13,10 @@
     <meta name="revisit-after" content="30 days">
     <meta name="author" content="Kathy Wu">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C34S93SNJS"></script>
     <script>
@@ -29,15 +30,15 @@
 <body>
     <div class="main">
             <header class="header">
-                <nav class="nav">
+                <nav class="nav container">
                     <div class="nav__logo">
                         <span class="name--highlight">Kathy </span>
                         &nbsp;Wu
                     </div>
                     <div class="nav__right">
-                        <ul class="navbar">
+                        <ul id="menu" class="navbar">
                             <li class="navbar__item">
-                                <a href="#home" class="navbar__link">Home</a>
+                                <a href="#home" class="navbar__link navbar--current">Home</a>
                             </li>
                             <li class="navbar__item">
                                 <a href="#about" class="navbar__link">About</a>
@@ -54,16 +55,19 @@
             </header>
             <div class="container">
                 <div class="pages">
-                    <div id="home" class="page homepage">
+                    <div id="home" class="page homepage active">
                         <div class="page__header homepage__header">
                             <img class="homepage__avatar" src="./assets/img/avatar.png" alt="Kathy Headshot" />
                             <div class="homepage__info">
                                 <h1 class="homepage__title">Kathy Wu</h1>
                                 <div class="homepage__job-title">Web Developer</div>
                                 <div class="homepage__social-icons socail-icons">
-                                    <a href="" class="social-icons--linkedin">LinkedIn</a>
-                                    <a href="" class="social-icons--github">GIT</a>
-                                    <a href="" class="social-icons--facebook">FB</a>
+                                    <a href="https://www.linkedin.com/in/kaiying-wu-123830105/" class="social-icon linkedin" target="_blank"><i
+                                            class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.facebook.com/kxirene/" class="social-icon github" target="_blank"><i
+                                            class="fab fa-github-square"></i></a>
+                                    <a href="https://github.com/kathy330" class="social-icon facebook" target="_blank"><i
+                                            class="fab fa-facebook-square"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -97,17 +101,145 @@
                         </div>
                     </div>
 
-                    <!-- <div id="about" class="page aboutPage">
+                    <div id="about" class="page aboutPage">
                         <div class="page__header">
                             <h1 class="page__title">ABOUT</h1>
                         </div>
-                        <div class="page__content"></div>
+                        <div class="page__content">
+                            <h3>Description</h3>
+                            <p>A passonate developer who is studying in UNSW. I am looking for practical work experience
+                                to gain an in-depth understanding of the web development. Also, I am keen to learn new things in IT.
+                                My long-term career goal is to be a senior web developer.</p>
+                        </div>
                     </div>
                     <div id="resume" class="page resumePage">
                         <div class="page__header">
                             <h1 class="page__title">RESUME</h1>
                         </div>
-                        <div class="page__content"></div>
+                        <div class="page__content">
+                            <div class="page__col-half resumePage__education">
+                                <h3 class="page__subtitle">Education</h3>
+                                <div class="timelines">
+                                    <div class="timeline">
+                                        <h4 class="timeline__title">Postgraduate Diploma</h4>
+                                        <div class="timeline__meta">
+                                            <span class="timeline__meta__period">2019 - Current</span>
+                                            |
+                                            <span class="timeline__meta__org">UNSW</span>
+                                        </div>
+                                        <div class="timeline__desc">
+                                            This is a part-time course, and the aim of studying this course is to study some advanced topics in
+                                            Computing.
+                                        </div>
+                                    </div>
+                                    <div class="timeline">
+                                        <h4 class="timeline__title">Naati Certified Course</h4>
+                                        <div class="timeline__meta">
+                                            <span class="timeline__meta__period">2017 - 2018</span>
+                                            <span class="timeline__meta__org">Australian Ideal College</span>
+                                        </div>
+                                        <div class="timeline__desc">
+                                            This is an interpreting and translating, to analyze text types for translation of special purpose tests
+                                            (from English to
+                                            Chinese).
+                                        </div>
+                                    </div>
+                                    <div class="timeline">
+                                        <h4 class="timeline__title">Bachelor's Degree</h4>
+                                        <div class="timeline__meta">
+                                            <span class="timeline__meta__period">2013 - 2016</span>
+                                            <span class="timeline__meta__org">Charles Sturt University</span>
+                                        </div>
+                                        <div class="timeline__desc">
+                                            Achievements: Obtained distinctions in Data Communications and Computer Networks, IT Project, IT
+                                            Security, Programming
+                                            in Java 1, Server Administration and Maintenance, Marketing & Society, Ethics and Professional Practice,
+                                            Workplace
+                                            Learning 1
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="page__col-half resumePage__experience">
+                                <h3 class="page__subtitle">Experience</h3>
+                                <div class="timelines">
+                                    <div class="timeline">
+                                        <h4 class="timeline__title">Web Developer</h4>
+                                        <div class="timeline__meta">
+                                            <span class="timeline__meta__period">Jan 2020 - Current</span>
+                                            <span class="timeline__meta__org">Renovating For Profit</span>
+                                        </div>
+                                        <div class="timeline__desc">
+                                            <ul>
+                                                <li>Integrate the Learning Management system in WordPress</li>
+                                                <li>Created and maintain internal web page</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="timeline">
+                                        <h4 class="timeline__title">Web Developer</h4>
+                                        <div class="timeline__meta">
+                                            <span class="timeline__meta__period">May 2018 - Feb 2020</span>
+                                            <span class="timeline__meta__org">OMNI Online</span>
+                                        </div>
+                                        <div class="timeline__desc">
+                                            <ul>
+                                                <li>Maintain, develop and extend custom WordPress solution</li>
+                                                <li>Provided guiding documentation for clients</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="timeline">
+                                        <h4 class="timeline__title">Web Developer Intern</h4>
+                                        <div class="timeline__meta">
+                                            <span class="timeline__meta__period">Mar 2017 - Aug 2017</span>
+                                            <span class="timeline__meta__org">Elite Transnational Pty Ltd</span>
+                                        </div>
+                                        <div class="timeline__desc">
+                                            <ul>
+                                                <li>Assist with senior developer in maintenance of company website</li>
+                                                <li>Provides basic level of technical support diagnosing problems</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page__col-half resumePage__frontendSkills">
+                                <h3 class="page__subtitle"><span class="hightlight">Frontend</span> Skills</h3>
+                                <div class="skill">
+                                    <h4 class="skill__title">HTML</h4>
+                                    <div class="skill__progressBar" data-progress="90"></div>
+                                </div>
+                                <div class="skill">
+                                    <h4 class="skill__title">CSS</h4>
+                                    <div class="skill__progressBar" data-progress="85"></div>
+                                </div>
+                                <div class="skill">
+                                    <h4 class="skill__title">Javascript</h4>
+                                    <div class="skill__progressBar" data-progress="85"></div>
+                                </div>
+                                <div class="skill">
+                                    <h4 class="skill__title" >React</h4>
+                                    <div class="skill__progressBar" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="page__col-half resumePage__backendendSkills">
+                                <h3 class="page__subtitle"><span class="hightlight">Backend</span> Skills</h3>
+                                <div class="skill">
+                                    <h4 class="skill__title">MySQL</h4>
+                                    <div class="skill__progressBar" data-progress="80"></div>
+                                </div>
+                                <div class="skill">
+                                    <h4 class="skill__title">Node.js</h4>
+                                    <div class="skill__progressBar" data-progress="80"></div>
+                                </div>
+                                <div class="skill">
+                                    <h4 class="skill__title">PHP</h4>
+                                    <div class="skill__progressBar"  data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="contact" class="page contactPage">
                         <div class="page__header">
@@ -125,18 +257,21 @@
                                 <input value="Submit" type="submit">
                             </form>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <footer class="footer">
-                © 2021 All rights reserved. Created by Kathy Wu
-                <div class="footer--right social-icons">
-                    <a href="" class="social-icons--linkedin"></a>
-                    <a href="" class="social-icons--github"></a>
-                    <a href="" class="social-icons--facebook"></a>
+                <div class="container">
+                    © 2021 All rights reserved. Created by Kathy Wu
+                    <div class="footer--right social-icons">
+                        <a href="https://www.linkedin.com/in/kaiying-wu-123830105/" class="social-icon linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/kxirene/" class="social-icon github" target="_blank"><i class="fab fa-github-square"></i></a>
+                        <a href="https://github.com/kathy330" class="social-icon facebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </div>
                 </div>
             </footer>
         </div>
     </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
