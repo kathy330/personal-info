@@ -51,6 +51,9 @@
                             </li>
                         </ul>
                     </div>
+                    <div id="mobileMenu" class="mobile-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </nav>
             </header>
             <div class="container">
@@ -246,16 +249,36 @@
                             <h1 class="page__title">CONTACT</h1>
                         </div>
                         <div class="page__content">
-                            <form id="contactform" action="https://formsubmit.io/send/a3b48d18-124b-4a32-b066-a3e722dde927" method="POST">
-                                <input name="_redirect" type="hidden" id="name" value="http://127.0.0.1:5500/personal-info/index.html#contact">
-                                <input name="name" type="text" id="name" placeholder="Name*" required/>
-                                <input name="email" type="email" id="email" placeholder="Email*" required/>
-                                <textarea name="comment" id="comment" rows="3" placeholder="Enter your inqury here." required/></textarea>
-                            
-                                <input name="_formsubmit_id" type="text" style="display:none">
-                            
-                                <input value="Submit" type="submit">
-                            </form>
+                            <div class="page__col-half">
+                                <h3 class="page__subtitle">Get in <span class="hightlight">Touch</span></h3>
+                                <div class="contactPage__details">
+                                    <div class="contactPage__detail">
+                                        <div class="contactPage__icon"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div class="contactPage__info">Sydney, Australia</div>
+                                    </div>
+                                    <div class="contactPage__detail">
+                                        <div class="contactPage__icon"><i class="fas fa-at"></i></div>
+                                        <div class="contactPage__info"><a href="mailto:katekathywu@gmail.com">katekathywu@gmail.com</a></div>
+                                    </div>
+                                    <div class="contactPage__detail">
+                                        <div class="contactPage__icon"><i class="fas fa-laptop-house"></i></div>
+                                        <div class="contactPage__info">Freelance Available</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page__col-half">
+                                <h3 class="page__subtitle">Contact <span class="hightlight">Form</span></h3>
+                                <form id="contactform" action="https://formsubmit.io/send/a3b48d18-124b-4a32-b066-a3e722dde927" method="POST">
+                                    <input name="_redirect" type="hidden" id="name" value="http://127.0.0.1:5500/personal-info/index.html#contact">
+                                    <input name="name" type="text" id="name" placeholder="Name*" required />
+                                    <input name="email" type="email" id="email" placeholder="Email*" required />
+                                    <textarea name="comment" id="comment" rows="3" placeholder="Enter your inqury here." required /></textarea>
+                                
+                                    <input name="_formsubmit_id" type="text" style="display:none">
+                                
+                                    <input value="Submit" type="submit">
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

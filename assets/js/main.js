@@ -26,3 +26,21 @@ function AnimateProgress(elem) {
 	// set custom attribue to the elem base on the [data-progress]
 	elem.setAttribute('style', `--animate-progress:${elem.getAttribute('data-progress')}%;`);
 }
+
+$('#mobileMenu').click(function() {
+	console.log('run');
+	// $('#menu').toggle('slide', { direction: 'right' }, 1000);
+	if ($('#menu').hasClass('menu--active')) {
+		$('#menu').hide();
+		$('#menu').removeClass('menu--active');
+	} else {
+		$('#menu').show();
+		$('#menu').removeAttr('style');
+		$('#menu').addClass('menu--active');
+	}
+});
+
+// $('#mobileMenu').click(function() {
+// 	if ($('#menu:visible').length) $('#another-element').hide('slide', { direction: 'right' }, 1000);
+// 	else $('#another-element').show('slide', { direction: 'right' }, 1000);
+// });

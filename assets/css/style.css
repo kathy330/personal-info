@@ -39,12 +39,13 @@ td {
 }
 
 input {
-  width: 49%;
+  width: 98%;
   height: 30px;
   margin-bottom: 10px;
   border: none;
   box-shadow: 5px 5px 10px lightgrey;
   border-radius: 5px;
+  padding: 3px 10px;
 }
 
 input[type=submit] {
@@ -60,6 +61,7 @@ textarea {
   border: none;
   border-radius: 5px;
   box-shadow: 5px 5px 10px lightgrey;
+  padding: 3px 10px;
 }
 
 .main {
@@ -108,10 +110,12 @@ textarea {
 
 .navbar {
   list-style: none;
+  padding: 0;
 }
 .navbar__item {
   float: left;
   padding: 15px;
+  position: relative;
 }
 .navbar__link {
   padding: 15px;
@@ -123,6 +127,18 @@ textarea {
 .navbar--current {
   color: #4661e3;
   font-weight: bold;
+}
+.navbar--current:after {
+  content: "";
+  width: 30px;
+  background: #4661e3;
+  position: absolute;
+  height: 3px;
+  margin: 0 auto;
+  display: block;
+  right: 0;
+  left: 0;
+  bottom: 8px;
 }
 
 .pages {
@@ -226,6 +242,10 @@ textarea {
   margin-left: 25px;
   margin-bottom: 20px;
 }
+.timeline:hover {
+  background: #eeeeee;
+  transition: 1s ease-in;
+}
 .timeline::before {
   content: "";
   width: 12px;
@@ -291,8 +311,35 @@ textarea {
   width: var(--animate-progress);
 }
 
+.contactPage__detail {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.contactPage__icon {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.contactPage__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.contactPage i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 35px;
+  color: #4661e3;
+}
+
 #contactform {
-  width: 90%;
   margin: auto;
 }
 
@@ -325,6 +372,10 @@ textarea {
   padding: 10px;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 769px) {
   .container {
     max-width: 720px;
@@ -348,6 +399,61 @@ textarea {
   }
 }
 @media (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .navbar__link {
+    color: #fff;
+  }
+
+  .navbar--current {
+    color: #4661e3;
+  }
+
+  .navbar__item {
+    text-align: center;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    top: 15px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .menu--active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    right: 0;
+    width: 55%;
+    height: 100vh;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    align-items: flex-start;
+  }
+  .nav__logo {
+    padding: 10px;
+  }
+
+  .header {
+    background: #4661e3;
+  }
+
+  .name--highlight {
+    color: #fff;
+  }
+
   .homepage__header {
     padding: 25px;
     flex-direction: column;
@@ -359,21 +465,12 @@ textarea {
     margin-bottom: 10px;
   }
 
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .page {
     margin: 35px auto;
   }
   .page__col-half {
     width: 100%;
     margin-bottom: 20px;
-  }
-
-  input {
-    width: 98%;
   }
 
   .footer--right {
