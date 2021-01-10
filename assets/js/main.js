@@ -6,8 +6,7 @@ $('.navbar__link').click(function() {
 	$('.page.active').removeClass('active');
 	// });
 	$(pageShow).fadeIn(function() {
-		$(pageShow).addClass('active');
-		$(pageShow).removeAttr('style');
+		$(pageShow).removeAttr('style').addClass('active');
 		if ($('#resume').hasClass('active')) {
 			if (
 				document.querySelectorAll('.skill').length > 0 &&

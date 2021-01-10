@@ -337,6 +337,10 @@ textarea {
 }
 
 .contactPage {
+	@at-root &__googleMap {
+		max-width: 90%;
+	}
+
 	@at-root &__detail {
 		display: flex;
 		flex-wrap: wrap;
@@ -375,11 +379,24 @@ textarea {
 .resumePage,
 .contactPage {
 	display: none;
+	opacity: 0;
 }
 
 .active {
 	display: flex;
+	opacity: 1;
+	transition: all .8s ease-in;
 }
+// #home.active,
+// #about.active,
+// #resume.active,
+// #contact.active {
+// 	display: flex;
+// 	-webkit-transition: all 5.5s ease;
+// 	-moz-transition: all 10.5s ease;
+// 	-o-transition: all 15.5s ease;
+// 	transition: all 15.5s ease;
+// }
 
 .social-icon {
 	font-size: 25px;
@@ -389,7 +406,11 @@ textarea {
 
 	&:hover {
 		color: $primaryColor;
+	}
+
+	@at-root .fab:hover {
 		transition: .5s;
+		text-shadow: 0px 0px 10px #fff;
 	}
 }
 
@@ -507,7 +528,9 @@ textarea {
 			margin-bottom: 20px;
 		}
 	}
-
+	.contactPage__googleMap {
+		max-width: 100%;
+	}
 	.footer--right {
 		margin-top: 5px;
 	}
