@@ -40,8 +40,8 @@ td {
 
 input {
   width: 98%;
-  height: 30px;
-  margin-bottom: 10px;
+  height: 40px;
+  margin-bottom: 15px;
   border: none;
   box-shadow: 5px 5px 10px lightgrey;
   border-radius: 5px;
@@ -57,6 +57,7 @@ input[type=submit] {
 
 textarea {
   width: 98%;
+  resize: none;
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
@@ -85,6 +86,8 @@ textarea {
   width: 100%;
   background-color: #fff;
   padding: 10px;
+  position: fixed;
+  z-index: 99;
 }
 
 .nav {
@@ -143,7 +146,8 @@ textarea {
 }
 
 .pages {
-  width: 100%;
+  width: 95%;
+  margin: 113px auto 45px;
 }
 
 .page {
@@ -245,7 +249,7 @@ textarea {
 }
 .timeline:hover {
   background: #eeeeee;
-  transition: 1s ease-in;
+  transition: 0.5s ease-in;
 }
 .timeline::before {
   content: "";
@@ -315,7 +319,7 @@ textarea {
 .contactPage__detail {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .contactPage__icon {
@@ -338,10 +342,6 @@ textarea {
   align-items: center;
   line-height: 35px;
   color: #4661e3;
-}
-
-#contactform {
-  margin: auto;
 }
 
 .homepage,
@@ -383,8 +383,8 @@ textarea {
   }
 
   .pages {
-    width: 96%;
-    margin: auto;
+    width: 92%;
+    margin: 90px auto 25px;
   }
 
   .page__header {
@@ -399,7 +399,7 @@ textarea {
     margin-bottom: -45px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .navbar {
     display: none;
   }
@@ -419,9 +419,11 @@ textarea {
     position: absolute;
     right: 15px;
     display: flex;
-    top: 15px;
     font-size: 20px;
     color: #fff;
+    align-items: center;
+    justify-content: center;
+    height: 49px;
   }
 
   .menu--active {
@@ -433,6 +435,7 @@ textarea {
     right: 0;
     width: 55%;
     height: 100vh;
+    margin-top: 10px;
   }
 
   .container {
