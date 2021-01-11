@@ -1,3 +1,4 @@
+// desktop menu switching tab
 $('.navbar__link').click(function() {
 	var pageShow = $(this).attr('href');
 	$('.navbar__link.navbar--current').removeClass('navbar--current');
@@ -19,6 +20,7 @@ $('.navbar__link').click(function() {
 	});
 });
 
+// animation for the progress bar in resume page.
 function AnimateProgress(elem) {
 	// add className .animate-progress to the elem
 	elem.className = 'animate-progress';
@@ -26,6 +28,7 @@ function AnimateProgress(elem) {
 	elem.setAttribute('style', `--animate-progress:${elem.getAttribute('data-progress')}%;`);
 }
 
+// mobile menu
 $('#mobileMenu').click(function() {
 	console.log('run');
 	// $('#menu').toggle('slide', { direction: 'right' }, 1000);

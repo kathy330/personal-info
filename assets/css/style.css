@@ -28,6 +28,8 @@ h1 {
 
 h3 {
   font-size: 1.6em;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 p {
@@ -196,6 +198,10 @@ textarea {
   margin-bottom: 25px;
 }
 
+.page__col-quad {
+  width: 25%;
+}
+
 .homepage__header {
   padding: 35px 65px 0;
 }
@@ -223,6 +229,12 @@ textarea {
   font-size: 1.2em;
   font-weight: 300;
   margin-bottom: 10px;
+}
+
+.seperator {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
 }
 
 .hightlight {
@@ -286,8 +298,43 @@ textarea {
   color: #4661e3;
 }
 
+.aboutPage__skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutPage__skill {
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 .skill {
   max-width: 90%;
+}
+.skill__image {
+  background: #fafafa;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.skill__image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 10px #39447c;
+  transition: 1s ease;
+}
+
+.skill__title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 [data-progress] {
@@ -405,6 +452,10 @@ textarea {
     padding: 25px;
   }
 
+  .page__col-quad {
+    width: 50%;
+  }
+
   .homepage__avatar {
     margin-bottom: -45px;
   }
@@ -485,6 +536,10 @@ textarea {
   .page__col-half {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .page__col-quad {
+    width: 100%;
   }
 
   .contactPage__googleMap {

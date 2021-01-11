@@ -39,16 +39,16 @@
                     <div class="nav__right">
                         <ul id="menu" class="navbar">
                             <li class="navbar__item">
-                                <a href="#home" class="navbar__link navbar--current">Home</a>
+                                <a href="#home" class="navbar__link navbar--current" onclick="return false">Home</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#about" class="navbar__link">About</a>
+                                <a href="#about" class="navbar__link" onclick="return false">About</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#resume" class="navbar__link">Resume</a>
+                                <a href="#resume" class="navbar__link" onclick="return false">Resume</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#contact" class="navbar__link">Contact</a>
+                                <a href="#contact" class="navbar__link" onclick="return false">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -114,6 +114,68 @@
                             <p>A passonate developer who is studying in UNSW. I am looking for practical work experience
                                 to gain an in-depth understanding of the web development. Also, I am keen to learn new things in IT.
                                 My long-term career goal is to be a senior web developer.</p>
+                            <!-- <hr class="seperator">
+                            <h3>About <span class="hightlight">Me</span></h3> -->
+                            <hr class="seperator">
+                            <h3>My <span class="hightlight">Skills</span></h3>
+                            <div class="aboutPage__skills">
+                                <div class="aboutPage__skill page__col-quad">
+                                    <div class="skill__image">
+                                        <img src="./assets/img/html-5.svg" alt="HTML 5" class="skill--icon"/>
+                                    </div>
+                                    <div class="skill__title">HTML</div>
+                                    <div class="skill__desc">Semantic HTML, SEO, Accessibility etc....</div>
+                                </div>
+                                <div class="aboutPage__skill page__col-quad">
+                                    <div class="skill__image">
+                                        <img src="./assets/img/css3.svg" alt="css 4" class="skill--icon"/>
+                                    </div>
+                                    <div class="skill__title">CSS</div>
+                                    <div class="skill__desc">Grid, Media Queries, Flexbox, Box Model, Selectors, Display, Absolute & Relative etc...</div>
+                                </div>
+                                <div class="aboutPage__skill page__col-quad">
+                                    <div class="skill__image">
+                                        <img src="./assets/img/javascript.svg" alt="JavaScript" class="skill--icon" />
+                                    </div>
+                                    <div class="skill__title">JavaScript</div>
+                                    <div class="skill__desc">Scoping, ES6, Hosting, Aysnc, Shallow Clone vs Deep Clone etc.....</div>
+                                </div>
+                                <div class="aboutPage__skill page__col-quad">
+                                    <div class="skill__image">
+                                        <img src="./assets/img/react.svg" alt="React" class="skill--icon" />
+                                    </div>
+                                    <div class="skill__title">React</div>
+                                    <div class="skill__desc">Functional & stateful component</div>
+                                </div>
+                                <div class="aboutPage__skill page__col-quad">
+                                    <div class="skill__image">
+                                        <img src="./assets/img/nodejs.svg" alt="NodeJS" class="skill--icon" />
+                                    </div>
+                                    <div class="skill__title">Node.js</div>
+                                    <div class="skill__desc">NPM, NVM, HTTP Module, etc..</div>
+                                </div>
+                                <div class="aboutPage__skill page__col-quad">
+                                    <div class="skill__image">
+                                        <img src="./assets/img/mysql-logo.svg" alt="MySQL" class="skill--icon" />
+                                    </div>
+                                    <div class="skill__title">MySQL</div>
+                                    <div class="skill__desc">SELECT , JOINS , INNER JOIN, DROP etc...</div>
+                                </div>
+                                <div class="aboutPage__skill page__col-quad">
+                                    <div class="skill__image">
+                                        <img src="./assets/img/php-logo.svg" alt="PHP" class="skill--icon" />
+                                    </div>
+                                    <div class="skill__title">PHP</div>
+                                    <div class="skill__desc">Form handling, encode & decode JSON, ajax etc...</div>
+                                </div>
+                                <div class="aboutPage__skill page__col-quad">
+                                    <div class="skill__image">
+                                        <img src="./assets/img/wordpress.svg" alt="WordPress" class="skill--icon" />
+                                    </div>
+                                    <div class="skill__title">WordPress</div>
+                                    <div class="skill__desc">Page Styling, customise theme, customise plugin, & etc...</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="resume" class="page resumePage">
@@ -175,12 +237,10 @@
                                             <span class="timeline__meta__org">Renovating For Profit</span>
                                         </div>
                                         <div class="timeline__desc">
-                                            <!-- <ul>
+                                            <ul>
                                                 <li>Integrate the Learning Management system in WordPress</li>
                                                 <li>Created and maintain internal web pages</li>
-                                            </ul> -->
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis dolorum fugiat fugit illo minus sit
-                                            suscipit? </p>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="timeline">
@@ -190,12 +250,10 @@
                                             <span class="timeline__meta__org">OMNI Online</span>
                                         </div>
                                         <div class="timeline__desc">
-                                            <!-- <ul>
+                                            <ul>
                                                 <li>Maintain, develop and extend custom WordPress solution</li>
                                                 <li>Provided guiding documentation for clients</li>
-                                            </ul> -->
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis dolorum fugiat fugit illo minus sit
-                                            suscipit? </p>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="timeline">
