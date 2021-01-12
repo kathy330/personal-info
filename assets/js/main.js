@@ -46,3 +46,12 @@ $('#mobileMenu').click(function() {
 // 	if ($('#menu:visible').length) $('#another-element').hide('slide', { direction: 'right' }, 1000);
 // 	else $('#another-element').show('slide', { direction: 'right' }, 1000);
 // });
+
+let windowsize = $(window).width();
+
+$(window).resize(function() {
+	windowsize = $(window).width();
+	if (windowsize > 576) {
+		$('#menu').removeAttr('style');
+	}
+});

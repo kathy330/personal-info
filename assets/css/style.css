@@ -231,6 +231,10 @@ textarea {
   margin-bottom: 10px;
 }
 
+.homepage__tableHeading {
+  font-weight: 600;
+}
+
 .seperator {
   display: block;
   width: 100%;
@@ -385,6 +389,7 @@ textarea {
   justify-content: center;
   align-items: center;
   margin-left: 10px;
+  font-size: 0.9em;
 }
 
 .contactPage i {
